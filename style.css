@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+
+div,
+section,
+header {
+	box-sizing: border-box;
+}
+body {
+	background: 
+    linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+    url(images.jpg);
+	font-family: Helvetica, Arial, sans-serif;
+}
+
+p{
+	font-family: 'Bangers', cursive;
+	float: left;
+	width: 100%;
+	margin: 15px 0px;
+	text-align: center;
+	font-size: 15px;
+	color: rgb(255, 255, 255);
+    text-shadow: 3px 0 black, 0 5px black,
+    5px 0 black, 0 5px black}
+
+
+
+.estrutura {
+	width: 100%;
+	max-width: 300px;
+	height: auto;
+	margin: 0 auto;
+	margin-top: 20px;
+	background-color: #FFF;
+	border-radius: 4px;
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+header {
+	float: left;
+	width: 100%;
+	height: auto;
+	background-color: #ce1717;
+	border: 3px solid black;
+	border-radius: 10px 10px 10px 10px;
+	
+}
+h1 {
+	font-family: 'Bangers', cursive;
+	float: left;
+	width: 100%;
+	margin: 15px 0px;
+	text-align: center;
+	font-size: 30px;
+	color: #FFF;
+    text-shadow: 5px 0 black, 0 5px black,
+    5px 0 black, 0 5px black}
+.placar {
+	float: left;
+	width: 100%;
+	text-align: center;
+	margin-bottom: 10px;
+}
+.placar-item {
+	width: 50px;
+	border-radius: 4px;
+	padding: 10px 5px;
+	text-align: center;
+	color: #333;
+	background-color: #FFF;
+}
+#acao.placar-item {
+	float: left;
+	margin-left: 15px;
+	cursor: pointer;
+}
+#acao.placar-item.mina:before {
+	font-family: FontAwesome;
+   	content: "\f1e2";
+}
+#acao.placar-item.bandeira:before {
+	font-family: FontAwesome;
+   	content: "\f024";
+}
+#minas-restantes.placar-item {
+	float: right;
+	margin-right: 15px;
+	font-weight: bold;
+}
+.btn-placar {
+	font-size: 31px;
+	border: none;
+	border-radius: 4px;
+	background-color: #FFF;
+	outline: none;
+}
+.btn-placar.normal:before {
+	font-family: FontAwesome;
+   	content: "\f11a";
+   	color: #333;
+}
+.btn-placar.feliz:before {
+	font-family: FontAwesome;
+   	content: "\f118";
+   	color: #4CAF50;
+}
+.btn-placar.triste:before {
+	font-family: FontAwesome;
+   	content: "\f119";
+   	color: #F44336;
+}
+.campo {
+	max-height: 440px;
+	overflow: auto;
+	float: left;
+	padding: 10px;
+	text-align: center;
+	box-shadow: 0 3px 6px rgb(10, 10, 10), 0 3px 6px rgb(0, 0, 0);
+	background-color: rgba(0, 200, 255, 0.403);
+	border-radius: 10px 10px 10px 10px;
+
+}
+
+.posicao {
+	float: left;
+	margin: 0px;
+	width: 35px;
+	height: 35px;
+	border: 2px solid rgb(0, 0, 0);
+	background-color: #c7ca16;
+	font-weight: bold;
+	color: rgb(43, 42, 42);
+	line-height: 35px;
+	position: relative;
+}
+.posicao.revelada {
+	background-color: #DDD;
+}
+.posicao[data-conteudo="mina"].revelada:before {
+	font-family: FontAwesome;
+   	content: "\f1e2";
+   	color: #333;
+}
+.posicao.marcada:before {
+	font-family: FontAwesome;
+   	content: "\f024";
+   	color: #FFF;
+}
+.posicao[data-conteudo="mina"].revelada.explodida:before {
+	font-family: FontAwesome;
+   	content: "\f1e2";
+   	color: #F44336;
+}
+.qtde-minas-1 {
+	color: #3F51B5;
+}
+.qtde-minas-2 {
+	color: #4CAF50;
+}
+.qtde-minas-3 {
+	color: #F44336;
+}
+.qtde-minas-4 {
+	color: #009688;
+}
+.qtde-minas-5 {
+	color: #FF5722;
+}
+.qtde-minas-6 {
+	color: #E91E63;
+}
+.qtde-minas-7 {
+	color: #795548;
+}
+.qtde-minas-8 {
+	color: #FFEB3B;
+}
+.posicao[data-status="oculta"]:hover {
+	cursor: pointer;
+	background-color: #26A69A;
+}
