@@ -5,6 +5,7 @@
 Link do jogo: https://jogo-campo-minado-marciosena.pages.dev/
 
 Este jogo é uma aplicação front-end, tem uma interface no estilo HQ e tem como principal objetivo voce detectar todas as bombas atraves da logica, possui 20 bombas e 76 espacos vazios
+
 ## Layout mobile
 ![Mobile 1](https://github.com/marciosenaf/campo-minado/blob/main/mobile.readme.png)
 
