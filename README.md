@@ -1,6 +1,6 @@
 [![NPM](https://img.shields.io/npm/l/react)](https://github.com/marciosenaf/campo-minado/blob/main/LICENSE) 
 
-# Sobre o projeto
+# Sobre o Projeto
 
 Link do jogo: https://jogo-campo-minado-marciosena.pages.dev/
 
